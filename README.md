@@ -83,6 +83,9 @@ kubectl version --short --client
 
 The Kubernetes Metrics Server is an aggregator of resource usage data in your cluster, and it is not deployed by default in Amazon EKS clusters. For more information, see Kubernetes Metrics Server on GitHub. The Metrics Server is commonly used by other Kubernetes add ons, such as the ```Horizontal Pod Autoscaler``` or the ```Kubernetes Dashboard```. 
 
+1. Deploy the Metrics Server with the following command:
+
 ```
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 ```
+2. Verify that the ```metrics-server``` deployment is running the desired number of Pods with the following command.
