@@ -94,3 +94,20 @@ kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/late
 kubectl get deployment metrics-server -n kube-system
 ```
 <img width="711" alt="Screenshot 2023-05-28 at 20 08 04" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/e4efb04d-4152-412f-9afc-62722066a595">
+
+<br> 
+<br>
+
+## Install Helm on the master node
+
+```
+sudo yum  install openssl 
+```
+
+```
+curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+```
+
+```
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+```
