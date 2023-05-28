@@ -4,6 +4,9 @@ https://docs.aws.amazon.com/eks/latest/userguide/prometheus.html
 
 https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html
 
+<br>
+<br>
+
 ## Launch a Kubernetes cluster on AWS EKS (use a Terraform template)
 
 1. Clone this official hashicorp repository with terraform templates:
