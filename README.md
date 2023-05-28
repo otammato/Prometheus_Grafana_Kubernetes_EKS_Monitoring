@@ -89,3 +89,8 @@ The Kubernetes Metrics Server is an aggregator of resource usage data in your cl
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 ```
 2. Verify that the ```metrics-server``` deployment is running the desired number of Pods with the following command.
+
+```
+kubectl get deployment metrics-server -n kube-system
+```
+<img width="711" alt="Screenshot 2023-05-28 at 20 08 04" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/e4efb04d-4152-412f-9afc-62722066a595">
