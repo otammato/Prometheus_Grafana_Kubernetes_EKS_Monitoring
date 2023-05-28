@@ -100,9 +100,9 @@ The Kubernetes Metrics Server is an aggregator of resource usage data in your cl
 ## Install Helm on the master node
 
 
-```
-sudo yum  install openssl 
-```
+    ```
+    sudo yum  install openssl 
+    ```
 
 ```
 curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
