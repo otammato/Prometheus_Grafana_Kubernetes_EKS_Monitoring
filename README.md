@@ -99,7 +99,9 @@ The Kubernetes Metrics Server is an aggregator of resource usage data in your cl
 
 ## Install Helm on the master node
 
-1. Install openssl and helm
+Helm does not directly require OpenSSL as a dependency. However, the installation script for Helm uses OpenSSL to verify the integrity of the downloaded binary.
+
+1. Install openssl and helm.
 
     ```
     sudo yum  install openssl 
