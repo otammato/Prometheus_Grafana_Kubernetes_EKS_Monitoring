@@ -20,7 +20,7 @@ This example repository contains configuration to provision a VPC, security grou
 <br>
 <br>
 
-2. Launch the terraform templates to create infrastructure
+2. Launch the terraform templates to create infrastructure and a Kubernetes cluster
 
 ```
 terraform init
