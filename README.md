@@ -65,3 +65,5 @@ echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc
 kubectl version --short --client
 ```
 <img width="711" alt="Screenshot 2023-05-28 at 19 47 36" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/526e31d2-0d75-4a9a-b6d6-aad35e75c82e">
+
+4. ```kubectl get svc```
