@@ -52,6 +52,9 @@ aws eks update-kubeconfig --name education-eks-hCIH6McB
 
 <img width="711" alt="Screenshot 2023-05-28 at 19 42 24" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/1b444954-1063-4f23-90f4-dff928cdc12a">
 
+<br>
+<br>
+
 3. Install ```kubectl```
 
 ```
