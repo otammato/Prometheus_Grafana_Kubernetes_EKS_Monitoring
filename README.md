@@ -41,6 +41,8 @@ terraform apply
 > <br>
 > <img width="584" alt="Screenshot 2023-05-28 at 18 30 32" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/9e0c2e9f-1fba-4496-b28f-798ea60070f2">
 
-## Launch and configure the master node to manage the Kubernetes cluster 
+## Launch and configure a master node to manage the Kubernetes cluster 
 
-1. Launch a new EC2 instance or use the Cloud9 instance to 
+1. Launch a new EC2 instance or use the current Cloud9 instance and configure it as a master node.
+
+<img width="711" alt="Screenshot 2023-05-28 at 19 42 24" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/1b444954-1063-4f23-90f4-dff928cdc12a">
