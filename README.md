@@ -43,7 +43,8 @@ terraform apply
 
 ## Launch and configure a master node to manage the Kubernetes cluster 
 
-1. Launch a new EC2 instance or use the current Cloud9 instance and configure it as a master node.
+1. Launch a new EC2 instance or use the current Cloud9 instance.
+2. Configure it as a master node.
 
 ```
 aws eks update-kubeconfig --name education-eks-hCIH6McB
