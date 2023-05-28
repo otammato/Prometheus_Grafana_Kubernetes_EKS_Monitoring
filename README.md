@@ -24,11 +24,11 @@ https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html
 
 2. Launch the terraform templates to create infrastructure and a Kubernetes cluster
 
-```
-terraform init
-terraform validate
-terraform apply
-```
+    ```
+    terraform init
+    terraform validate
+    terraform apply
+    ```
 
 <img width="711" alt="Screenshot 2023-05-28 at 17 53 54" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/05c90361-fa22-4b15-8f28-0071bc700691">
 
