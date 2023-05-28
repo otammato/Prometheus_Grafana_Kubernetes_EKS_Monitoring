@@ -130,3 +130,4 @@ helm upgrade -i prometheus prometheus-community/prometheus \
     --namespace prometheus \
     --set alertmanager.persistentVolume.storageClass="gp2",server.persistentVolume.storageClass="gp2"
 ```
+4. Verify that all of the Pods in the prometheus namespace are in the READY state
