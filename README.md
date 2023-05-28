@@ -62,18 +62,18 @@ https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html
 
 3. Install ```kubectl```
 
-```
-curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.27.1/2023-04-19/bin/linux/amd64/kubectl
-chmod +x ./kubectl
-mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$HOME/bin:$PATH
-echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc
-kubectl version --short --client
-```
-<img width="711" alt="Screenshot 2023-05-28 at 19 47 36" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/526e31d2-0d75-4a9a-b6d6-aad35e75c82e">
+    ```
+    curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.27.1/2023-04-19/bin/linux/amd64/kubectl
+    chmod +x ./kubectl
+    mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$HOME/bin:$PATH
+    echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc
+    kubectl version --short --client
+    ```
+    <img width="711" alt="Screenshot 2023-05-28 at 19 47 36" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/526e31d2-0d75-4a9a-b6d6-aad35e75c82e">
 
 4. Make sure the master node can access the cluster ```kubectl get svc```
 
-<img width="491" alt="Screenshot 2023-05-28 at 19 54 05" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/28a52c37-a26f-42fd-8a9c-f33793a482d4">
+    <img width="491" alt="Screenshot 2023-05-28 at 19 54 05" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/28a52c37-a26f-42fd-8a9c-f33793a482d4">
 
 <br>
 <br>
@@ -84,28 +84,28 @@ The Kubernetes Metrics Server is an aggregator of resource usage data in your cl
 
 1. Deploy the Metrics Server with the following command:
 
-```
-kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
-```
+    ```
+    kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+    ```
 2. Verify that the ```metrics-server``` deployment is running the desired number of Pods with the following command.
 
-```
-kubectl get deployment metrics-server -n kube-system
-```
-<img width="711" alt="Screenshot 2023-05-28 at 20 08 04" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/e4efb04d-4152-412f-9afc-62722066a595">
+    ```
+    kubectl get deployment metrics-server -n kube-system
+    ```
+    <img width="711" alt="Screenshot 2023-05-28 at 20 08 04" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/e4efb04d-4152-412f-9afc-62722066a595">
 
 <br> 
 <br>
 
 ## Install Helm on the master node
 
-```
-sudo yum  install openssl 
-```
+    ```
+    sudo yum  install openssl 
+    ```
 
-```
-curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
-```
+    ```
+    curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+    ```
 
 <br> 
 <br>
@@ -114,33 +114,33 @@ curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
 1. Create a Prometheus namespace.
 
-```
-kubectl create namespace prometheus
-```
+    ```
+    kubectl create namespace prometheus
+    ```
 2. Add the prometheus-community chart repository.
 
-```
-helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-```
+    ```
+    helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+    ```
 3. Deploy Prometheus.
 
-```
-helm upgrade -i prometheus prometheus-community/prometheus \
-    --namespace prometheus \
-    --set alertmanager.persistentVolume.storageClass="gp2",server.persistentVolume.storageClass="gp2"
-```
+    ```
+    helm upgrade -i prometheus prometheus-community/prometheus \
+        --namespace prometheus \
+        --set alertmanager.persistentVolume.storageClass="gp2",server.persistentVolume.storageClass="gp2"
+    ```
 4. Verify that all of the Pods in the prometheus namespace are in the READY state
 
-```
-kubectl get pods -n prometheus
-```
-<img width="711" alt="Screenshot 2023-05-28 at 20 32 05" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/48351a67-ea11-4010-a212-6358f4afef87">
+    ```
+    kubectl get pods -n prometheus
+    ```
+    <img width="711" alt="Screenshot 2023-05-28 at 20 32 05" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/48351a67-ea11-4010-a212-6358f4afef87">
 
 5. Use kubectl to port forward the Prometheus console.
 
-```
-kubectl --namespace=prometheus port-forward deploy/prometheus-server 9090
-```
+    ```
+    kubectl --namespace=prometheus port-forward deploy/prometheus-server 9090
+    ```
 
 <img width="711" alt="Screenshot 2023-05-28 at 20 35 12" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/092d168c-2122-4f50-adac-1ba194f8f07d">
 
