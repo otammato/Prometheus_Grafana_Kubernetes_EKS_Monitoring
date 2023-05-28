@@ -283,3 +283,5 @@ Here's a general outline of the steps you can follow:
 Once the reverse proxy is set up, you should be able to access Prometheus by navigating to `http://YOUR_DOMAIN_OR_IP_ADDRESS` in a web browser. The reverse proxy will forward the request to Prometheus running on `127.0.0.1:9090` and return the response.
 
 Note: Make sure you have proper security measures in place, such as enabling authentication or restricting access to trusted IP addresses, to protect your Prometheus instance from unauthorized access.
+
+<img width="711" alt="Screenshot 2023-05-28 at 21 57 02" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/db2100f0-053a-46d4-89ee-d18733c4dabe">
