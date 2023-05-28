@@ -175,6 +175,12 @@ Here's a general outline of the steps you can follow:
    ```
 
    Replace `YOUR_DOMAIN_OR_IP_ADDRESS` with the public IP address or domain name of your EC2 instance.
+   
+   <details markdown=1><summary markdown="span">This is my `/etc/nginx/nginx.conf` file as a reference </summary>
+
+   ```sh
+   ```
+</details>
 
 3. Start Nginx: Start the Nginx service by running the following command:
 
