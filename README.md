@@ -108,11 +108,25 @@ sudo yum  install openssl
 curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 ```
 
-```
-helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-```
-
 <br> 
 <br>
 
 ## Deploy Prometheus using Helm
+
+1. Create a Prometheus namespace.
+
+```
+kubectl create namespace prometheus
+```
+2. Add the prometheus-community chart repository.
+
+```
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+```
+3. Deploy Prometheus.
+
+```
+helm upgrade -i prometheus prometheus-community/prometheus \
+    --namespace prometheus \
+    --set alertmanager.persistentVolume.storageClass="gp2",server.persistentVolume.storageClass="gp2"
+```
