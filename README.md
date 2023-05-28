@@ -101,13 +101,13 @@ The Kubernetes Metrics Server is an aggregator of resource usage data in your cl
 
 1. k
 
-```
-sudo yum  install openssl 
-```
+    ```
+    sudo yum  install openssl 
+    ```
 
-```
-curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
-```
+    ```
+    curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+    ```
 
 <br> 
 <br>
