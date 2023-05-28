@@ -99,7 +99,7 @@ The Kubernetes Metrics Server is an aggregator of resource usage data in your cl
 
 ## Install Helm on the master node
 
-1. k
+.
 
     ```
     sudo yum  install openssl 
@@ -144,7 +144,7 @@ The Kubernetes Metrics Server is an aggregator of resource usage data in your cl
     kubectl --namespace=prometheus port-forward deploy/prometheus-server 9090
     ```
 
-<img width="711" alt="Screenshot 2023-05-28 at 20 35 12" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/092d168c-2122-4f50-adac-1ba194f8f07d">
+    <img width="711" alt="Screenshot 2023-05-28 at 20 35 12" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/092d168c-2122-4f50-adac-1ba194f8f07d">
 
 
 ## Access from the internet
