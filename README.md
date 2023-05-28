@@ -149,7 +149,7 @@ Helm does not directly require OpenSSL as a dependency. However, the installatio
     <img width="711" alt="Screenshot 2023-05-28 at 20 35 12" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/092d168c-2122-4f50-adac-1ba194f8f07d">
 
 
-## Set up a reverse proxy based on NGINX (to provide the access from the internet)
+## Set up a reverse proxy based on NGINX (to provide the access to Prometheus GUI from the internet)
 
 To access Prometheus running on `127.0.0.1:9090` from the internet, you'll need to set up a reverse proxy or port forwarding to make Prometheus accessible externally.
 
