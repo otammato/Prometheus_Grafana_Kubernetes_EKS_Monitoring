@@ -178,8 +178,8 @@ Here's a general outline of the steps you can follow:
    
 <details markdown=1><summary markdown="span">This is my `/etc/nginx/nginx.conf` file as a reference </summary>
 
-```sh
-    For more information on configuration, see:
+```conf
+For more information on configuration, see:
 #   * Official English Documentation: http://nginx.org/en/docs/
 #   * Official Russian Documentation: http://nginx.org/ru/docs/
 
