@@ -6,7 +6,7 @@ https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html
 
 ## Use a Terraform template to launch a Kubernetes cluster on AWS EKS
 
-1. Clone this official hashicorp repository
+1. Clone this official hashicorp repository with terraform templates
 
 
 ```
