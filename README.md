@@ -12,9 +12,9 @@ https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html
 1. Clone this official hashicorp repository with terraform templates:
 
 
-```
-git clone https://github.com/hashicorp/learn-terraform-provision-eks-cluster
-```
+    ```
+    git clone https://github.com/hashicorp/learn-terraform-provision-eks-cluster
+    ```
 
 This example repository contains configuration to provision a VPC, security groups, and an EKS cluster with the following architecture:
 
