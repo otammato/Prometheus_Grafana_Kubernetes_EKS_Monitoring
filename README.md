@@ -144,3 +144,49 @@ kubectl --namespace=prometheus port-forward deploy/prometheus-server 9090
 ```
 
 <img width="711" alt="Screenshot 2023-05-28 at 20 35 12" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/092d168c-2122-4f50-adac-1ba194f8f07d">
+
+
+## Access from the internet
+
+To access Prometheus running on `127.0.0.1:9090` from the internet, you'll need to set up a reverse proxy or port forwarding to make Prometheus accessible externally.
+
+Here's a general outline of the steps you can follow:
+
+1. Configure a reverse proxy: Set up a reverse proxy server, such as Nginx or Apache, on your EC2 instance. The reverse proxy will receive incoming requests and forward them to the Prometheus server.
+
+2. Install and configure Nginx (example): Install Nginx on your EC2 instance by running the following commands:
+
+   ```
+   sudo yum update -y
+   sudo yum install nginx
+   ```
+
+   Once installed, you can configure Nginx by modifying the configuration file located at `/etc/nginx/nginx.conf`. Here's an example configuration block that you can add to the `http` section of the file:
+
+   ```
+   server {
+       listen 80;
+       server_name YOUR_DOMAIN_OR_IP_ADDRESS;
+
+       location / {
+           proxy_pass http://127.0.0.1:9090;
+       }
+   }
+   ```
+
+   Replace `YOUR_DOMAIN_OR_IP_ADDRESS` with the public IP address or domain name of your EC2 instance.
+
+3. Start Nginx: Start the Nginx service by running the following command:
+
+   ```
+   sudo systemctl start nginx
+   sudo systemctl enable nginx
+   ```
+
+   Nginx will now listen on port 80 and forward requests to `http://127.0.0.1:9090`.
+
+4. Allow inbound traffic: Ensure that your EC2 instance's security group allows inbound traffic on port 80. You may need to modify the security group settings to allow incoming HTTP traffic.
+
+Once the reverse proxy is set up, you should be able to access Prometheus by navigating to `http://YOUR_DOMAIN_OR_IP_ADDRESS` in a web browser. The reverse proxy will forward the request to Prometheus running on `127.0.0.1:9090` and return the response.
+
+Note: Make sure you have proper security measures in place, such as enabling authentication or restricting access to trusted IP addresses, to protect your Prometheus instance from unauthorized access.
