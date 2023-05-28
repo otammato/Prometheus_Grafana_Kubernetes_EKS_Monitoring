@@ -17,12 +17,16 @@ This example repository contains configuration to provision a VPC, security grou
 
 <img width="711" alt="Screenshot 2023-05-28 at 17 53 54" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/9ac1f30e-7b2c-4b7c-bcca-95de95b03e04">
 
+```
+terraform init
+terraform validate
+terraform apply
+```
+
 <img width="711" alt="Screenshot 2023-05-28 at 17 53 54" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/05c90361-fa22-4b15-8f28-0071bc700691">
 
 > If you use AWS Cloud9 as an IDE you also have to disallow AWS Managed Temporary Credentials
-
 > Go to Cloud9 > Preferences > AWS Settings > AWS Managed Temporary Credentials and turn it off.
-
 > Store your permanent AWS access credentials in the environment. Use ```aws configure``` command.
 > <img width="279" alt="Screenshot 2023-05-28 at 14 14 28" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/34f3028e-3fed-4baf-b2af-b1180ea5e5b5">
 
