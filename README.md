@@ -44,6 +44,9 @@ terraform apply
 > <br>
 > <img width="584" alt="Screenshot 2023-05-28 at 18 30 32" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/9e0c2e9f-1fba-4496-b28f-798ea60070f2">
 
+<br>
+<br>
+
 ## Launch and configure a master node to manage the Kubernetes cluster 
 
 1. Launch a new EC2 instance or use the current Cloud9 instance.
@@ -72,6 +75,9 @@ kubectl version --short --client
 4. Make sure the master node can access the cluster ```kubectl get svc```
 
 <img width="491" alt="Screenshot 2023-05-28 at 19 54 05" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/28a52c37-a26f-42fd-8a9c-f33793a482d4">
+
+<br>
+<br>
 
 ## Installing the Kubernetes Metrics Server
 
