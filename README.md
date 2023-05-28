@@ -136,3 +136,9 @@ helm upgrade -i prometheus prometheus-community/prometheus \
 kubectl get pods -n prometheus
 ```
 <img width="711" alt="Screenshot 2023-05-28 at 20 32 05" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/48351a67-ea11-4010-a212-6358f4afef87">
+
+5. Use kubectl to port forward the Prometheus console to your local machine.
+
+```
+kubectl --namespace=prometheus port-forward deploy/prometheus-server 9090
+```
