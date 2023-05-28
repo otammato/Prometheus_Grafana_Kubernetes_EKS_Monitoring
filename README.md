@@ -22,7 +22,7 @@ https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html
 <br>
 <br>
 
-2. Launch the terraform templates to create infrastructure and a Kubernetes cluster
+2. Launch the terraform templates to create infrastructure and a Kubernetes cluster on AWS EKS.
 
     ```
     terraform init
