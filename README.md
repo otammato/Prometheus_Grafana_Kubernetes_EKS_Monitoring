@@ -363,9 +363,9 @@ Prometheus is now set up to monitor a Kubernetes cluster and scrape metrics
 
 4. Check if Grafana is deployed properly
 
-```
-kubectl get all -n grafana
-```
-<img width="451" alt="Screenshot 2023-05-29 at 11 39 40" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/eb54f43d-9c5d-4239-89a8-6ea251410477">
+    ```
+    kubectl get all -n grafana
+    ```
+    <img width="451" alt="Screenshot 2023-05-29 at 11 39 40" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/eb54f43d-9c5d-4239-89a8-6ea251410477">
 
     
