@@ -337,15 +337,20 @@ Prometheus is now set up to monitor a Kubernetes cluster and scrape metrics
     - access: The access mode for the datasource, which is set to "proxy". This suggests that the datasource should be accessed via a proxy server.
     - isDefault: A boolean flag indicating whether this datasource should be set as the default datasource. In this case, it is set to true, meaning it will be the default datasource.
 
-
-    ```
-    kubectl create namespace grafana
-    ```
-    <img width="451" alt="Screenshot 2023-05-29 at 10 53 10" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/10b62f1c-c1fd-44fc-9862-39c2889bbcb4">
+2.  Grab Grafana Helm charts
 
     ```
     helm repo add grafana https://grafana.github.io/helm-charts
     ```
     <img width="451" alt="Screenshot 2023-05-29 at 10 56 25" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/42a48fec-9b7f-49ee-a940-a584ed0dc3cd">
+    
+3. Install Grafana
+    ```
+    kubectl create namespace grafana
+    ```
+    <img width="451" alt="Screenshot 2023-05-29 at 10 53 10" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/10b62f1c-c1fd-44fc-9862-39c2889bbcb4">
+
+    
+    
 
     
