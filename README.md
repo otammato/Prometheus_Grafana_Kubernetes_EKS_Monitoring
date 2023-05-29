@@ -290,3 +290,20 @@ Once the reverse proxy is set up, you should be able to access Prometheus by nav
 Note: Make sure you have proper security measures in place, such as enabling authentication or restricting access to trusted IP addresses, to protect your Prometheus instance from unauthorized access.
 
 <img width="711" alt="Screenshot 2023-05-28 at 21 57 02" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/db2100f0-053a-46d4-89ee-d18733c4dabe">
+
+<br>
+<br>
+
+## Result of setting up Prometheus
+
+Prometheus is now set up to monitor a Kubernetes cluster and scrape metrics
+
+<img width="711" alt="Screenshot 2023-05-29 at 10 08 13" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/72473a58-17ce-43e7-bb4a-fb67a0e55f54">
+
+<img width="711" alt="Screenshot 2023-05-29 at 10 08 29" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/cb9d246a-8d64-46d5-a0c9-9c2db2871b21">
+<img width="711" alt="Screenshot 2023-05-29 at 10 06 51" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/92a0f5ad-ec02-49f7-bbf6-a3fc27364420">
+<img width="711" alt="Screenshot 2023-05-29 at 10 07 22" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/c992ad4c-46ac-4cef-961d-f4a50d578926">
+
+<img width="711" alt="Screenshot 2023-05-29 at 10 07 47" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/6f1c35c8-4e27-478c-8b8d-cb92a548c2d6">
+
+
