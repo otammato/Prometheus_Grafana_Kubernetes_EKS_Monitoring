@@ -397,18 +397,20 @@ kubectl get secret --namespace grafana grafana -o jsonpath="{.data.admin-passwor
 
 <br>
 <br>
+
 1. Grab a Prometheus-server IP
 
-```
-kubectl get svc prometheus-server -n prometheus -o jsonpath='http://{.spec.clusterIP}:{.spec.ports[0].port}'
-```
-<img width="711" alt="Screenshot 2023-05-29 at 12 35 46" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/1ea57b2d-4391-47eb-9fcb-d72c85516301">
+    ```
+    kubectl get svc prometheus-server -n prometheus -o jsonpath='http://{.spec.clusterIP}:{.spec.ports[0].port}'
+    ```
+
+    <img width="711" alt="Screenshot 2023-05-29 at 12 35 46" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/1ea57b2d-4391-47eb-9fcb-d72c85516301">
 
 
-1. Add Prometheus as a data source
+2. Add Prometheus as a data source
 
-<img width="711" alt="Screenshot 2023-05-29 at 12 27 00" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/46411c75-3bde-4555-ba8a-14db4fd3e554">
+    <img width="711" alt="Screenshot 2023-05-29 at 12 27 00" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/46411c75-3bde-4555-ba8a-14db4fd3e554">
 
-<img width="711" alt="Screenshot 2023-05-29 at 12 29 30" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/96835451-f2a4-45ab-b52c-33617bf9b182">
+    <img width="711" alt="Screenshot 2023-05-29 at 12 29 30" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/96835451-f2a4-45ab-b52c-33617bf9b182">
 
 
