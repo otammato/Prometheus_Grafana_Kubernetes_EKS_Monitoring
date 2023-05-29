@@ -395,3 +395,10 @@ kubectl get secret --namespace grafana grafana -o jsonpath="{.data.admin-passwor
 
 <img width="711" alt="image" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/7e68a31f-cebf-4e5d-8775-cd56880d74fd">
 
+1. Add Prometheus as a data source
+
+<img width="711" alt="Screenshot 2023-05-29 at 12 27 00" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/46411c75-3bde-4555-ba8a-14db4fd3e554">
+
+<img width="711" alt="Screenshot 2023-05-29 at 12 29 30" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/96835451-f2a4-45ab-b52c-33617bf9b182">
+
+
