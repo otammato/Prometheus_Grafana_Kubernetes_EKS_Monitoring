@@ -411,8 +411,6 @@ kubectl get secret --namespace grafana grafana -o jsonpath="{.data.admin-passwor
 
     <img width="711" alt="Screenshot 2023-05-29 at 12 27 00" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/46411c75-3bde-4555-ba8a-14db4fd3e554">
 
-    <img width="711" alt="Screenshot 2023-05-29 at 12 29 30" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/96835451-f2a4-45ab-b52c-33617bf9b182">
-
     <img width="711" alt="Screenshot 2023-05-29 at 12 40 28" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/8cf185ef-e9e1-4768-b9ae-839f7a9e35a7">
 
 3. Create a Dashboard
@@ -427,3 +425,4 @@ kubectl get secret --namespace grafana grafana -o jsonpath="{.data.admin-passwor
     
     <img width="711" alt="Screenshot 2023-05-29 at 12 57 25" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/15c880fc-f94c-4fe7-8d3e-997f182c001d">
     <img width="711" alt="Screenshot 2023-05-29 at 13 01 58" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/ad4e0b9f-9503-4e26-8a37-93b7600f33cb">
+    <img width="711" alt="Screenshot 2023-05-29 at 12 29 30" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/96835451-f2a4-45ab-b52c-33617bf9b182">
