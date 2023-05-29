@@ -359,7 +359,8 @@ Prometheus is now set up to monitor a Kubernetes cluster and scrape metrics
         --values grafana.yaml \
         --set service.type=LoadBalancer
     ```
-    
+    <img width="451" alt="Screenshot 2023-05-29 at 11 36 26" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/9aaaae84-c0ac-492a-b4ec-607f594a5f50">
+
     
 
     
