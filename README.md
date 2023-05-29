@@ -417,4 +417,5 @@ kubectl get secret --namespace grafana grafana -o jsonpath="{.data.admin-passwor
 
 3. Create a Dashboard
 
-    <img width="1499" alt="Screenshot 2023-05-29 at 12 45 39" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/1d68387e-8316-4a53-8646-19b171ba0222">
+ 
+    <img width="711" alt="Screenshot 2023-05-29 at 14 27 08" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/09b8ed7f-592e-4eef-84f3-cd7cd91ecd3c">
