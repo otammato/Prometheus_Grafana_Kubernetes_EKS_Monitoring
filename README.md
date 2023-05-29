@@ -313,3 +313,12 @@ Prometheus is now set up to monitor a Kubernetes cluster and scrape metrics
 <img width="711" alt="Screenshot 2023-05-29 at 10 08 29" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/cb9d246a-8d64-46d5-a0c9-9c2db2871b21">
 
 ## Set up Grafana to connect to Prometheus end visualise the metrics
+
+1. Install Grafana
+
+```
+kubectl create namespace grafana
+```
+<img width="465" alt="Screenshot 2023-05-29 at 10 51 13" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/ad6645ad-402c-44b8-a0c1-211aba4a1093">
+
+
