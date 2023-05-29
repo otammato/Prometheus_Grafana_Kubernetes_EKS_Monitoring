@@ -377,3 +377,7 @@ Prometheus is now set up to monitor a Kubernetes cluster and scrape metrics
     echo "http://$ELB"
     ```
     <img width="451" alt="Screenshot 2023-05-29 at 11 42 29" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/7fc15451-c8c5-438a-887f-445f6543bcd9">
+
+6. Paste the URL into your web browser to access Grafana
+
+    <img width="451" alt="image" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/9ad1b3a0-22af-49ac-8e7d-618e09b33b49">
