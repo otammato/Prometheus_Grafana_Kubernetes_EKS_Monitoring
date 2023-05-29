@@ -315,7 +315,7 @@ Prometheus is now set up to monitor a Kubernetes cluster and scrape metrics
 <br>
 <br>
 
-## Set up Grafana to connect to Prometheus for further visualisation and analysis of the metrics
+## Install Grafana
 
 1. Copy paste the following in a YAML file, name it grafana.yaml
     ```
@@ -387,3 +387,5 @@ Prometheus is now set up to monitor a Kubernetes cluster and scrape metrics
 ```
 kubectl get secret --namespace grafana grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
 ```
+
+## Set up Grafana to connect to Prometheus for further visualisation and analysis of metrics
