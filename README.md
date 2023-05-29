@@ -381,3 +381,9 @@ Prometheus is now set up to monitor a Kubernetes cluster and scrape metrics
 6. Paste the URL into your web browser to access Grafana
 
     <img width="711" alt="image" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/9ad1b3a0-22af-49ac-8e7d-618e09b33b49">
+
+7. When logging in, use username "admin" and get password by running the following:
+
+```
+kubectl get secret --namespace grafana grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
+```
