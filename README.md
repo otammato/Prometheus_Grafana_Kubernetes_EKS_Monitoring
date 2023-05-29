@@ -48,8 +48,13 @@ https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html
 
 ## Launch and configure a master node to manage the Kubernetes cluster 
 
-1. Launch a new EC2 instance or use the current Cloud9 instance.
-2. Configure it as a master node to work with a cluster named ```education-eks-hCIH6McB```:
+1. Launch a new EC2 instance or use the current Cloud9 instance. Here is the example of AWS CLI command to launch a t3.small EC2 instance:
+
+```
+aws ec2 run-instances --image-id ami-xxxxxxxx --count 1 --instance-type t3.small --key-name MyKeyPair --security-group-ids sg-903004f8 --subnet-id subnet-6e7f829e
+```
+
+3. Configure it as a master node to work with a cluster named ```education-eks-hCIH6McB```:
 
     ```
     aws eks update-kubeconfig --name education-eks-hCIH6McB
