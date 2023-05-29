@@ -331,11 +331,11 @@ Prometheus is now set up to monitor a Kubernetes cluster and scrape metrics
     ```
     This is a configuration file for a monitoring system to visualize and analyze metrics collected by Prometheus. It defines a Prometheus datasource with the following properties:
 
-    name: The name of the datasource, which is set to "Prometheus".
-    type: The type of the datasource, which is set to "prometheus".
-    url: The URL of the Prometheus server, which is specified as "http://prometheus-server.prometheus.svc.cluster.local". This is the internal URL used to access the Prometheus server within a Kubernetes cluster.
-    access: The access mode for the datasource, which is set to "proxy". This suggests that the datasource should be accessed via a proxy server.
-    isDefault: A boolean flag indicating whether this datasource should be set as the default datasource. In this case, it is set to true, meaning it will be the default datasource.
+    - name: The name of the datasource, which is set to "Prometheus".
+    - type: The type of the datasource, which is set to "prometheus".
+    - url: The URL of the Prometheus server, which is specified as "http://prometheus-server.prometheus.svc.cluster.local". This is the internal URL used to access the Prometheus server within a Kubernetes cluster.
+    - access: The access mode for the datasource, which is set to "proxy". This suggests that the datasource should be accessed via a proxy server.
+    - isDefault: A boolean flag indicating whether this datasource should be set as the default datasource. In this case, it is set to true, meaning it will be the default datasource.
 
 
     ```
