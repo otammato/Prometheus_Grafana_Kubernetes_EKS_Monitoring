@@ -319,6 +319,6 @@ Prometheus is now set up to monitor a Kubernetes cluster and scrape metrics
 ```
 kubectl create namespace grafana
 ```
-<img width="470" alt="Screenshot 2023-05-29 at 10 52 24" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/b8ae960a-1a6c-4566-967e-d5bd6d49090d">
+<img width="451" alt="Screenshot 2023-05-29 at 10 53 10" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/10b62f1c-c1fd-44fc-9862-39c2889bbcb4">
 
 
