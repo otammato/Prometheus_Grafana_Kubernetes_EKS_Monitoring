@@ -398,10 +398,11 @@ kubectl get secret --namespace grafana grafana -o jsonpath="{.data.admin-passwor
 <br>
 <br>
 1. Grab a Prometheus-server IP
+
 ```
 kubectl get svc prometheus-server -n prometheus -o jsonpath='http://{.spec.clusterIP}:{.spec.ports[0].port}'
 ```
-<img width="1111" alt="Screenshot 2023-05-29 at 12 35 46" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/1ea57b2d-4391-47eb-9fcb-d72c85516301">
+<img width="711" alt="Screenshot 2023-05-29 at 12 35 46" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/1ea57b2d-4391-47eb-9fcb-d72c85516301">
 
 
 1. Add Prometheus as a data source
