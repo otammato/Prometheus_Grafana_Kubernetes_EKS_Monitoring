@@ -315,9 +315,28 @@ Prometheus is now set up to monitor a Kubernetes cluster and scrape metrics
 <br>
 <br>
 
-## Set up Grafana to connect to Prometheus and visualise the metrics
+## Set up Grafana to connect to Prometheus for further visualisation and analysis of the metrics
 
-1. Install Grafana
+1. Copy paste the following in a YAML file, name it grafana.yaml
+    ```
+    datasources:
+      datasources.yaml:
+        apiVersion: 1
+        datasources:
+        - name: Prometheus
+          type: prometheus
+          url: http://prometheus-server.prometheus.svc.cluster.local
+          access: proxy
+          isDefault: true
+    ```
+    This is a configuration file for a monitoring system to visualize and analyze metrics collected by Prometheus. It defines a Prometheus datasource with the following properties:
+
+    name: The name of the datasource, which is set to "Prometheus".
+    type: The type of the datasource, which is set to "prometheus".
+    url: The URL of the Prometheus server, which is specified as "http://prometheus-server.prometheus.svc.cluster.local". This is the internal URL used to access the Prometheus server within a Kubernetes cluster.
+    access: The access mode for the datasource, which is set to "proxy". This suggests that the datasource should be accessed via a proxy server.
+    isDefault: A boolean flag indicating whether this datasource should be set as the default datasource. In this case, it is set to true, meaning it will be the default datasource.
+
 
     ```
     kubectl create namespace grafana
