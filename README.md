@@ -431,8 +431,10 @@ Prometheus is now set up to monitor a Kubernetes cluster and scrape metrics
 <br>
 <br>
 
-## Other Grafana dashboards can be found and retrieved by ID from the official Grafana site available here:
+## Other Grafana dashboards
 
-https://grafana.com/grafana/dashboards/?search=Prometheus
+1. Other Grafana dashboards can be found and retrieved by ID from the official Grafana site available here:
 
-<img width="711" alt="Screenshot 2023-05-29 at 14 39 30" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/beec9f92-d951-4749-b665-d7c4c8cde4d1">
+    https://grafana.com/grafana/dashboards/?search=Prometheus
+
+    <img width="711" alt="Screenshot 2023-05-29 at 14 39 30" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/beec9f92-d951-4749-b665-d7c4c8cde4d1">
