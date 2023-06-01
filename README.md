@@ -417,6 +417,8 @@ Prometheus is now set up to monitor a Kubernetes cluster and scrape metrics
 
     <img width="711" alt="Screenshot 2023-05-29 at 14 27 08" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/09b8ed7f-592e-4eef-84f3-cd7cd91ecd3c">
 
+    <img width="711" alt="Screenshot 2023-05-29 at 12 29 30" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/96835451-f2a4-45ab-b52c-33617bf9b182">
+
     <img width="711" alt="Screenshot 2023-05-29 at 13 36 30" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/969aa485-0c81-4ae0-acf2-d21f0da7d798">
     
     <img width="711" alt="Screenshot 2023-05-29 at 12 46 29" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/d8d975e0-692b-4335-9740-1d2478640777">
@@ -425,7 +427,7 @@ Prometheus is now set up to monitor a Kubernetes cluster and scrape metrics
     
     <img width="711" alt="Screenshot 2023-05-29 at 12 57 25" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/15c880fc-f94c-4fe7-8d3e-997f182c001d">
     <img width="711" alt="Screenshot 2023-05-29 at 13 01 58" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/ad4e0b9f-9503-4e26-8a37-93b7600f33cb">
-    <img width="711" alt="Screenshot 2023-05-29 at 12 29 30" src="https://github.com/otammato/Prometheus_Grafana_Kubernetes_EKS_Monitoring/assets/104728608/96835451-f2a4-45ab-b52c-33617bf9b182">
+    
 
 
 <br>
