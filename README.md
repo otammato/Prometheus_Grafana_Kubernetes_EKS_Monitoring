@@ -83,7 +83,7 @@ https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html
 <br>
 <br>
 
-## Installing the Kubernetes Metrics Server
+## Install the Kubernetes Metrics Server
 
 The Kubernetes Metrics Server is an aggregator of resource usage data in your cluster, and it is not deployed by default in Amazon EKS clusters. For more information, see Kubernetes Metrics Server on GitHub. The Metrics Server is commonly used by other Kubernetes add ons, such as the ```Horizontal Pod Autoscaler``` or the ```Kubernetes Dashboard```. 
 
